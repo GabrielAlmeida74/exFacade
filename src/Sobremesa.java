@@ -9,7 +9,7 @@ public class Sobremesa extends Produto {
         this.tamanho = tamanho;
     }
 
-    public void setInfo(String descricao, String tamanho, double preco){
+    public Sobremesa(String descricao, String tamanho, double preco){
         setDescricao(descricao);
         setTamanho(tamanho);
         setPreco(preco);

@@ -9,7 +9,7 @@ public class Bebida extends Produto {
     public void setMl(int Ml) {
         this.Ml = Ml;
     }
-    public void setInfo(String descricao, int Ml, double preco){
+    public Bebida(String descricao, int Ml, double preco){
         setDescricao(descricao);
         setMl(Ml);
         setPreco(preco);
