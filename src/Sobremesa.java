@@ -1,5 +1,6 @@
 public class Sobremesa extends Produto {
 
+    private String tamanho;
     public String getTamanho() {
         return tamanho;
     }
@@ -8,6 +9,14 @@ public class Sobremesa extends Produto {
         this.tamanho = tamanho;
     }
 
-    private String tamanho;
+    public void setInfo(String descricao, String tamanho, double preco){
+        setDescricao(descricao);
+        setTamanho(tamanho);
+        setPreco(preco);
+    }
+
+    public String getInfo(){
+        return getDescricao()+" tamanho "+getTamanho()+", R$"+getPreco();
+    }
 
 }

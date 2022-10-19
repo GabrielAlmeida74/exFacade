@@ -15,19 +15,19 @@ public class Combo {
     public void CriarCombo(int combo) {
         switch(combo) {
             case 1:
-                burguer.setDescricao("Hamburguer de Frango");
-                sobremesa.setDescricao("Sunday de Chocolate");
-                bebida.setDescricao("Refrigerante ou Suco");
+                burguer.setInfo("Hamburguer de Frango", 200,12);
+                sobremesa.setInfo("Sunday de Chocolate", "Médio",10);
+                bebida.setInfo("Refrigerante ou Suco",300,7);
                 break;
             case 2:
-                burguer.setDescricao("Hamburguer de Salsicha");
-                sobremesa.setDescricao("Cookie");
-                bebida.setDescricao("Milkshake");
+                burguer.setInfo("Hamburguer de Salsicha", 200,12);
+                sobremesa.setInfo("Torta", "Médio",10);
+                bebida.setInfo("Açai",300,7);
                 break;
             case 3:
-                burguer.setDescricao("Hamburguer de Feijão");
-                sobremesa.setDescricao("Açai");
-                bebida.setDescricao("Refrigerante ou Suco");
+                burguer.setInfo("Hamburguer de Feijão", 200,12);
+                sobremesa.setInfo("Cookie", "Médio",10);
+                bebida.setInfo("Milkshake",300,7);
                 break;
             default:
                 System.out.println("Número inválido");
@@ -36,8 +36,7 @@ public class Combo {
     }
 
     public void MostrarCombo(){
-        System.out.println(burguer.getDescricao() + ", " + sobremesa.getDescricao() + ", e um " + bebida.getDescricao());
+        System.out.println(burguer.getInfo() + ", " + sobremesa.getInfo() + ", e um " + bebida.getInfo());
     }
-
 
 }

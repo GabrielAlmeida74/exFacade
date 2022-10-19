@@ -4,7 +4,7 @@ public class Main {
         System.out.println("Selecione seu compo");
         System.out.println("1. Combo Master Frango");
         System.out.println("2. Super Combo Salsicha");
-        System.out.println("2. Ultra Combo Feijão");
+        System.out.println("3. Ultra Combo Feijão");
         System.out.print("Sua escolha: ");
         Scanner input = new Scanner(System.in);
         int tipo = input.nextInt();
